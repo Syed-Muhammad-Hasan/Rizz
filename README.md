@@ -1,6 +1,8 @@
 # Rizz
 This repository contains codebase for assignments of Data Visualization course at UniGe.
+
 Group members: Syed Muhammad Hasan, Muhammad Ahsan Iqbal
+
 # Steps for making it working on your local machine:
 <ol>
   <li>Make sure you have installed Python, Jupyter notebook, pandas, numpy, npm.</li>
