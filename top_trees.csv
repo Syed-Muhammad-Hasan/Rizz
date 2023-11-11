@@ -1,0 +1,121 @@
+state,city,1.0,2.0,3.0,4.0,5.0
+Arizona,Phoenix,Fraxinus velutina,Syagrus romanzoffiana,Cercidium floridum,Fraxinus,Citrus paradisi
+California,Anaheim,Magnolia grandiflora,Washingtonia robusta,Lagerstroemia indica,Cinnamomum camphora,Pinus canariensis
+California,Fresno,Cedrus deodara,Pistacia chinensis,Quercus lobata,Ulmus parvifolia,Quercus coccinea
+California,Garden Grove,Lagerstroemia indica,Lophostemon confertus,Cupaniopsis anacardioides,Pinus canariensis,Syagrus romanzoffianum
+California,Huntington Beach,Syagrus romanzoffianum,Washingtonia robusta,Lagerstroemia indica,Eucalyptus camaldulensis,Archontophoenix cunninghamiana
+California,Irvine,Pinus canariensis,Eucalyptus globulus,Eucalyptus maculata,Tristaniopsis Brongn.,Pinus brutia
+California,Los Angeles,Washingtonia robusta,Lagerstroemia indica,Magnolia grandiflora,Liquidambar styraciflua,Ficus microcarpa
+California,Ontario,Lagerstroemia indica,Liquidambar styraciflua,Cinnamomum camphora,Platanus acerifolia,Pinus canariensis
+California,Rancho Cucamonga,Lagerstroemia indica,Platanus acerifolia,Eucalyptus globulus,Magnolia grandiflora,Pyrus calleryana
+California,Sacramento,Platanus acerifolia,Pistacia chinensis,Pyrus calleryana,Lagerstroemia indica,Ulmus parvifolia
+California,San Diego,Syagrus romanzoffianum,Washingtonia robusta,Cupaniopsis anacardioides,Eucalyptus,Pinus
+California,San Francisco,Platanus acerifolia,Metrosideros excelsa,Tristaniopsis laurina,Lophostemon confertus,Magnolia grandiflora
+California,Santa Rosa,Quercus,Sequoia sempervirens,Abies,Acer,Platanus acerifolia
+California,Stockton,Pistacia chinensis,Platanus acerifolia,Lagerstroemia indica,Celtis sinensis,Pyrus calleryana
+Colorado,Aurora,Gleditsia triacanthos,Tilia,Fraxinus pennsylvanica,Acer platanoides,Acer saccharinum
+Colorado,Colorado Springs,Pinus ponderosa,Fraxinus pennsylvanica,Acer saccharinum,Picea pungens,Ulmus pumila
+Colorado,Denver,Fraxinus pennsylvanica,Gleditsia triacanthos,Tilia cordata,Acer saccharinum,Fraxinus americana
+District of Columbia,Washington DC,Acer rubrum,Quercus phellos,Ulmus americana,Quercus palustris,Zelkova serrata
+Florida,Cape Coral,Sabal palmetto,Quercus virginiana,Pinus elliottii,Taxodium distichum,Quercus laurifolia
+Florida,Lutz,Quercus virginiana,,,,
+Florida,Miami,Pinus elliottii,Sabal palmetto,Adonidia merrillii,Eugenia,Musa acuminata
+Florida,Orlando,Quercus virginiana,Lagerstroemia indica,Quercus laurifolia,Sabal palmetto,Ulmus parvifolia
+Florida,Seffner,Quercus laurifolia,Quercus nigra,Quercus virginiana,Ulmus parvifolia,
+Florida,Tampa,Quercus virginiana,Quercus geminata,Lagerstroemia indica,Sabal palmetto,Pinus elliottii
+Florida,Temple Terrace,Quercus geminata,Quercus laevis,Platanus occidentalis,Quercus incana,
+Hawaii,Ahuimanu,Lagerstroemia indica,Delonix regia,Harpullia pendula,Plumeria,
+Hawaii,Aiea,Albizia saman,,,,
+Hawaii,Heeia,Lagerstroemia indica,,,,
+Hawaii,Honolulu,Albizia saman,Cocos nucifera,Cassia nealiae,Tabebuia heterophylla,Acacia confusa
+Hawaii,Kailua,Adonidia merrillii,Cocos nucifera,Tabebuia heterophylla,Casuarina equisetifolia,Conocarpus erectus
+Hawaii,Kaneohe,Adonidia merrillii,Cassia nealiae,Tabebuia heterophylla,Lagerstroemia indica,Cocos nucifera
+Hawaii,Waipahu,Cassia nealiae,Lagerstroemia speciosa,Cassia fistula,Harpullia pendula,
+Iowa,Adair,Acer saccharinum,Fraxinus pennsylvanica,Acer platanoides,Picea pungens,Acer saccharum
+Iowa,Adel,Fraxinus pennsylvanica,Acer saccharinum,Malus,Acer nigrum,Pyrus
+Iowa,Baxter,Acer saccharum,Acer saccharinum,Juniperus virginiana,Picea pungens,Quercus rubra
+Iowa,Bayard,Fraxinus pennsylvanica,Acer saccharinum,Acer saccharum,Acer platanoides,Celtis occidentalis
+Iowa,Bondurant,Malus,Catalpa,Fraxinus pennsylvanica,Acer saccharinum,Pinus sylvestris
+Iowa,Bouton,Fraxinus pennsylvanica,Acer saccharinum,Celtis occidentalis,Populus tremuloides,Gleditsia triacanthos
+Iowa,Carlisle,Celtis occidentalis,Fraxinus,Juglans nigra,Quercus rubra,Pinus strobus
+Iowa,Colfax,Acer saccharinum,Acer saccharum,Fraxinus,Acer,Gleditsia triacanthos
+Iowa,Coon Rapids,Fraxinus pennsylvanica,Acer platanoides,Acer saccharinum,Quercus rubra,Tilia cordata
+Iowa,Dallas Center,Fraxinus pennsylvanica,Acer saccharinum,Acer saccharum,Acer platanoides,Pinus strobus
+Iowa,De Soto,Juglans nigra,Acer negundo,Ulmus pumila,Fraxinus pennsylvanica,Acer saccharinum
+Iowa,Des Moines,Gymnocladus dioicus,Quercus,Quercus alba,Ulmus americana,Malus
+Iowa,Dexter,Malus,Fraxinus,Acer saccharum,Acer saccharinum,Acer platanoides
+Iowa,Earlham,Malus,Acer saccharum,Fraxinus pennsylvanica,Acer rubrum,Acer saccharinum
+Iowa,Elkhart,Acer saccharinum,Fraxinus pennsylvanica,Quercus macrocarpa,Malus,Acer
+Iowa,Granger,Fraxinus pennsylvanica,Acer saccharinum,Malus,Acer platanoides,Quercus rubra
+Iowa,Guthrie Center,Acer saccharum,Fraxinus pennsylvanica,Acer saccharinum,Acer platanoides,Celtis occidentalis
+Iowa,Hartford,Acer saccharinum,Celtis occidentalis,Acer platanoides,Juglans nigra,Morus
+Iowa,Kellogg,Juglans nigra,Acer saccharinum,Fraxinus pennsylvanica,Acer saccharum,Picea
+Iowa,Milo,Fraxinus,Malus,Acer saccharinum,Acer ginnala,Acer saccharum
+Iowa,Mitchellville,Acer saccharinum,Fraxinus pennsylvanica,Celtis occidentalis,Acer platanoides,Acer saccharum
+Iowa,Monroe,Acer saccharinum,Acer saccharum,Cercis canadensis,Celtis occidentalis,Acer
+Iowa,Newton,Quercus macrocarpa,Fraxinus pennsylvanica,Pinus strobus,Quercus rubra,Malus
+Iowa,Oakland Acres,Pinus strobus,Quercus rubra,Quercus palustris,Fraxinus pennsylvanica,Acer rubrum
+Iowa,Panora,Acer saccharum,Fraxinus pennsylvanica,Acer saccharinum,Acer platanoides,Malus
+Iowa,Pleasant Hill,Malus,Celtis occidentalis,Quercus rubra,Quercus macrocarpa,Pinus strobus
+Iowa,Polk City,Malus,Pyrus,Fraxinus pennsylvanica,Acer rubrum,Quercus bicolor
+Iowa,Prairie City,Picea,Acer saccharinum,Thuja occidentalis,Acer saccharum,Fraxinus
+Iowa,Redfield,Malus,Acer saccharinum,Fraxinus pennsylvanica,Acer,Celtis occidentalis
+Iowa,Runnells,Fraxinus pennsylvanica,Acer saccharinum,Acer,Acer rubrum,Picea
+Iowa,Stuart,Acer saccharum,Fraxinus pennsylvanica,Acer saccharinum,Acer platanoides,Gleditsia triacanthos
+Iowa,Sully,Acer saccharum,Acer saccharinum,Fraxinus pennsylvanica,Picea,Gleditsia triacanthos
+Iowa,Union,Acer saccharum,Acer nigrum,Acer platanoides,Acer saccharinum,Fraxinus
+Iowa,Van Meter,Acer saccharum,Platanus occidentalis,Acer saccharinum,Quercus palustris,Ulmus pumila
+Iowa,Waukee,Fraxinus pennsylvanica,Malus,Picea,Tilia cordata,Pinus strobus
+Iowa,Windsor Heights,Fraxinus pennsylvanica,Pyrus,Populus,Malus,Gleditsia triacanthos
+Iowa,Woodward,Acer saccharinum,Acer platanoides,Acer nigrum,Fraxinus pennsylvanica,Malus
+Kansas,Overland Park,Acer rubrum,Fraxinus americana,Quercus palustris,Liquidambar styraciflua,Fraxinus pennsylvanica
+Kentucky,Louisville,Acer saccharum,Quercus palustris,Acer rubrum,Fraxinus pennsylvanica,Celtis occidentalis
+Louisiana,New Orleans,Lagerstroemia indica,Quercus virginiana,Taxodium distichum,Ilex attenuata,Magnolia grandiflora
+Maryland,Baltimore,Acer rubrum,Zelkova serrata,Platanus acerifolia,Tilia cordata,Prunus
+Massachusetts,Boston,Pinus strobus,Acer rubrum,Quercus rubra,Prunus serotina,Tree
+Michigan,Detroit,Salix,Populus,Acer rubrum,Ulmus,Platanus acerifolia
+Michigan,Grand Rapids,Acer platanoides,Gleditsia triacanthos,Acer rubrum,Acer saccharum,Tilia cordata
+Missouri,St. Louis,Acer rubrum,Fraxinus pennsylvanica,Pyrus calleryana,Quercus palustris,Fraxinus americana
+Nevada,Las Vegas,Pinus brutia,Fraxinus velutina,Washingtonia robusta,Acacia stenophylla,Vitex agnus-castus
+New Mexico,Albuquerque,Ulmus pumila,Platanus acerifolia,Gleditsia triacanthos,Pinus nigra,Fraxinus
+New York,Buffalo,Acer platanoides,Tilia cordata,Acer saccharinum,Malus,Acer rubrum
+New York,New York,Platanus acerifolia,Gleditsia triacanthos,Pyrus calleryana,Quercus palustris,Acer platanoides
+New York,Rochester,Gleditsia triacanthos,Tilia cordata,Platanus acerifolia,Fraxinus pennsylvanica,Quercus rubra
+North Carolina,Durham,Lagerstroemia,Quercus phellos,Acer buergerianum,Acer rubrum,Ulmus parvifolia
+North Carolina,Greensboro,Lagerstroemia,Quercus phellos,Carya illinoinensis,Ulmus,Celtis occidentalis
+Ohio,Columbus,Fraxinus pennsylvanica,Pyrus calleryana,Acer rubrum,Acer saccharum,Gleditsia triacanthos
+Oklahoma,Oklahoma City,Juniperus virginiana,Lagerstroemia indica,Quercus stellata,Pistacia chinensis,Ulmus parvifolia
+Oregon,Portland,Prunus,Acer platanoides,Acer rubrum,Pyrus,Acer
+Pennsylvania,Pittsburgh,Acer platanoides,Acer rubrum,Platanus acerifolia,Pyrus calleryana,Tilia cordata
+South Dakota,Sioux Falls,Fraxinus pennsylvanica,Acer platanoides,Acer freemanii,Acer saccharinum,Tilia cordata
+Tennessee,Knoxville,Acer rubrum,Cornus florida,Acer saccharum,Lagerstroemia indica,Cercis canadensis
+Tennessee,Nashville,Platanus acerifolia,Zelkova serrata,Quercus phellos,Liquidambar styraciflua,Ulmus parvifolia
+Texas,Austin,Carya illinoinensis,Ulmus crassifolia,Quercus virginiana,Lagerstroemia indica,Quercus fusiformis
+Texas,Dallas,Quercus virginiana,Ulmus crassifolia,Quercus shumardii,Taxodium distichum,Lagerstroemia indica
+Texas,Houston,Lagerstroemia indica,Quercus virginiana,Celtis occidentalis,Quercus nigra,Triadica sebifera
+Texas,Plano,Ulmus crassifolia,Celtis occidentalis,Quercus rubra,Quercus virginiana,Taxodium distichum
+Virginia,Richmond,Acer saccharum,Quercus phellos,Lagerstroemia indica,Acer rubrum,Quercus palustris
+Washington,Seattle,Prunus cerasifera,Acer rubrum,Acer platanoides,Malus,Prunus L.
+Wisconsin,Brown Deer,Fraxinus pennsylvanica,Acer saccharum,Quercus rubra,Celtis occidentalis,Tilia americana
+Wisconsin,Cedarburg,Tilia americana,,,,
+Wisconsin,Cudahy,Gleditsia triacanthos,Tilia americana,Acer saccharinum,Acer saccharum,Fraxinus pennsylvanica
+Wisconsin,Fox Point,Thuja occidentalis,Aesculus hippocastanum,Fraxinus pennsylvanica,Pinus resinosa,Quercus rubra
+Wisconsin,Franklin,Quercus rubra,Gleditsia triacanthos,Malus tschonoskii,Acer saccharum,Fraxinus americana
+Wisconsin,Glendale,Fraxinus pennsylvanica,Acer saccharum,Acer platanoides,Quercus rubra,Acer saccharinum
+Wisconsin,Greendale,Fraxinus pennsylvanica,Celtis occidentalis,Pinus resinosa,Pinus sylvestris,Malus tschonoskii
+Wisconsin,Greenfield,Acer saccharum,Fraxinus pennsylvanica,Quercus rubra,Acer platanoides,Quercus alba
+Wisconsin,Hales Corners,Acer saccharum,Fraxinus pennsylvanica,Gleditsia triacanthos,Juglans nigra,Acer platanoides
+Wisconsin,Madison,Acer platanoides,Fraxinus pennsylvanica,Tilia,Tilia cordata,Gleditsia triacanthos
+Wisconsin,Milwaukee,Gleditsia triacanthos,Fraxinus pennsylvanica,Acer platanoides,Acer saccharum,Celtis occidentalis
+Wisconsin,Muskego,Acer ginnala,Fagus grandifolia,,,
+Wisconsin,New Berlin,Fraxinus pennsylvanica,Picea pungens,Acer platanoides,Fraxinus americana,Gleditsia triacanthos
+Wisconsin,Oak Creek,Quercus rubra,Malus tschonoskii,Gleditsia triacanthos,Acer saccharum,Quercus alba
+Wisconsin,Shorewood,Crataegus,Juglans nigra,Malus tschonoskii,Acer platanoides,Acer saccharum
+Wisconsin,South Milwaukee,Acer saccharum,Fraxinus americana,Celtis occidentalis,Gleditsia triacanthos,Quercus rubra
+Wisconsin,Watertown,Acer platanoides,Tilia cordata,Pyrus calleryana,Gleditsia triacanthos,Malus tschonoskii
+Wisconsin,Wauwatosa,Fraxinus pennsylvanica,Acer saccharum,Acer platanoides,Gleditsia triacanthos,Quercus rubra
+Wisconsin,West Allis,Celtis occidentalis,Gleditsia triacanthos,Fraxinus pennsylvanica,Malus tschonoskii,Acer saccharum
+Wisconsin,West Bend,Populus tremuloides,,,,
+Wisconsin,West Milwaukee,Acer saccharum,Crataegus,Gleditsia triacanthos,Juniperus virginiana,Quercus rubra
+Wisconsin,Whitefish Bay,Gleditsia triacanthos,Robinia pseudoacacia,Tilia,Quercus rubra,Fraxinus
+Wisconsin,Wind Lake,Carya ovata,,,,
