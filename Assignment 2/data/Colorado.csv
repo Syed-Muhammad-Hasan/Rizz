@@ -1,0 +1,31 @@
+source,target,value
+Colorado,Denver,1
+Colorado,ColoradoSprings,1
+Colorado,Aurora,1
+Denver,Fabaceae,23565
+Denver,Malvaceae,12961
+Denver,Oleaceae,37658
+Denver,Sapindaceae,12735
+Oleaceae,Fraxinus americana,11922
+Sapindaceae,Acer saccharinum,12735
+Malvaceae,Tilia cordata,12961
+Fabaceae,Gleditsia triacanthos,23565
+Oleaceae,Fraxinus pennsylvanica,25736
+ColoradoSprings,Oleaceae,1844
+ColoradoSprings,Pinaceae,2812
+ColoradoSprings,Sapindaceae,952
+ColoradoSprings,Ulmaceae,841
+Ulmaceae,Ulmus pumila,841
+Pinaceae,Picea pungens,888
+Sapindaceae,Acer saccharinum,952
+Oleaceae,Fraxinus pennsylvanica,1844
+Pinaceae,Pinus ponderosa,1924
+Aurora,Fabaceae,10428
+Aurora,Malvaceae,6107
+Aurora,Oleaceae,5465
+Aurora,Sapindaceae,8178
+Sapindaceae,Acer saccharinum,3433
+Sapindaceae,Acer platanoides,4745
+Oleaceae,Fraxinus pennsylvanica,5465
+Malvaceae,Tilia,6107
+Fabaceae,Gleditsia triacanthos,10428

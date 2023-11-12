@@ -1,0 +1,22 @@
+source,target,value
+North Carolina,Greensboro,1
+North Carolina,Durham,1
+Greensboro,Cannabaceae,295
+Greensboro,Fagaceae,523
+Greensboro,Juglandaceae,437
+Greensboro,Lythraceae,713
+Greensboro,Ulmaceae,405
+Cannabaceae,Celtis occidentalis,295
+Ulmaceae,Ulmus,405
+Juglandaceae,Carya illinoinensis,437
+Fagaceae,Quercus phellos,523
+Lythraceae,Lagerstroemia,713
+Durham,Fagaceae,2777
+Durham,Lythraceae,3103
+Durham,Sapindaceae,1745
+Durham,Ulmaceae,573
+Ulmaceae,Ulmus parvifolia,573
+Sapindaceae,Acer rubrum,718
+Sapindaceae,Acer buergerianum,1027
+Fagaceae,Quercus phellos,2777
+Lythraceae,Lagerstroemia,3103

@@ -1,0 +1,41 @@
+source,target,value
+Texas,Plano,1
+Texas,Houston,1
+Texas,Dallas,1
+Texas,Austin,1
+Plano,Cannabaceae,3279
+Plano,Cupressaceae,1598
+Plano,Fagaceae,4504
+Plano,Ulmaceae,3641
+Cupressaceae,Taxodium distichum,1598
+Fagaceae,Quercus virginiana,1906
+Fagaceae,Quercus rubra,2598
+Cannabaceae,Celtis occidentalis,3279
+Ulmaceae,Ulmus crassifolia,3641
+Houston,Cannabaceae,13013
+Houston,Euphorbiaceae,9561
+Houston,Fagaceae,54863
+Houston,Lythraceae,44320
+Euphorbiaceae,Triadica sebifera,9561
+Fagaceae,Quercus nigra,10804
+Cannabaceae,Celtis occidentalis,13013
+Fagaceae,Quercus virginiana,44059
+Lythraceae,Lagerstroemia indica,44320
+Dallas,Cupressaceae,691
+Dallas,Fagaceae,1999
+Dallas,Lythraceae,497
+Dallas,Ulmaceae,844
+Lythraceae,Lagerstroemia indica,497
+Cupressaceae,Taxodium distichum,691
+Fagaceae,Quercus shumardii,761
+Ulmaceae,Ulmus crassifolia,844
+Fagaceae,Quercus virginiana,1238
+Austin,Fagaceae,1380
+Austin,Juglandaceae,916
+Austin,Lythraceae,609
+Austin,Ulmaceae,831
+Fagaceae,Quercus fusiformis,590
+Lythraceae,Lagerstroemia indica,609
+Fagaceae,Quercus virginiana,790
+Ulmaceae,Ulmus crassifolia,831
+Juglandaceae,Carya illinoinensis,916

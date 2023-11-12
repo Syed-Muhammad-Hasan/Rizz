@@ -1,0 +1,32 @@
+source,target,value
+New York,Rochester,1
+New York,NewYork,1
+New York,Buffalo,1
+Rochester,Fabaceae,6307
+Rochester,Fagaceae,2178
+Rochester,Malvaceae,3329
+Rochester,Oleaceae,2499
+Rochester,Platanaceae,2970
+Fagaceae,Quercus rubra,2178
+Oleaceae,Fraxinus pennsylvanica,2499
+Platanaceae,Platanus acerifolia,2970
+Malvaceae,Tilia cordata,3329
+Fabaceae,Gleditsia triacanthos,6307
+NewYork,Fabaceae,64264
+NewYork,Fagaceae,53185
+NewYork,Platanaceae,87014
+NewYork,Rosaceae,58931
+NewYork,Sapindaceae,40112
+Sapindaceae,Acer platanoides,40112
+Fagaceae,Quercus palustris,53185
+Rosaceae,Pyrus calleryana,58931
+Fabaceae,Gleditsia triacanthos,64264
+Platanaceae,Platanus acerifolia,87014
+Buffalo,Malvaceae,9156
+Buffalo,Rosaceae,2731
+Buffalo,Sapindaceae,20591
+Sapindaceae,Acer rubrum,2601
+Rosaceae,Malus,2731
+Sapindaceae,Acer saccharinum,4725
+Malvaceae,Tilia cordata,9156
+Sapindaceae,Acer platanoides,13265

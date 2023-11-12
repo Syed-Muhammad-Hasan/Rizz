@@ -1,0 +1,134 @@
+source,target,value
+California,Stockton,1
+California,SantaRosa,1
+California,SanFrancisco,1
+California,SanDiego,1
+California,Sacramento,1
+California,RanchoCucamonga,1
+California,Ontario,1
+California,LosAngeles,1
+California,Irvine,1
+California,HuntingtonBeach,1
+California,GardenGrove,1
+California,Fresno,1
+California,Anaheim,1
+Stockton,Anacardiaceae,11392
+Stockton,Cannabaceae,7179
+Stockton,Lythraceae,7354
+Stockton,Platanaceae,7552
+Stockton,Rosaceae,5296
+Rosaceae,Pyrus calleryana,5296
+Cannabaceae,Celtis sinensis,7179
+Lythraceae,Lagerstroemia indica,7354
+Platanaceae,Platanus acerifolia,7552
+Anacardiaceae,Pistacia chinensis,11392
+SantaRosa,Cupressaceae,203
+SantaRosa,Fagaceae,468
+SantaRosa,Pinaceae,155
+SantaRosa,Platanaceae,87
+SantaRosa,Sapindaceae,139
+Platanaceae,Platanus acerifolia,87
+Sapindaceae,Acer,139
+Pinaceae,Abies,155
+Cupressaceae,Sequoia sempervirens,203
+Fagaceae,Quercus,468
+SanFrancisco,Magnoliaceae,7793
+SanFrancisco,Myrtaceae,25422
+SanFrancisco,Platanaceae,11925
+Magnoliaceae,Magnolia grandiflora,7793
+Myrtaceae,Lophostemon confertus,8236
+Myrtaceae,Tristaniopsis laurina,8509
+Myrtaceae,Metrosideros excelsa,8677
+Platanaceae,Platanus acerifolia,11925
+SanDiego,Arecaceae,37753
+SanDiego,Myrtaceae,13269
+SanDiego,Pinaceae,12677
+SanDiego,Sapindaceae,13608
+Pinaceae,Pinus,12677
+Myrtaceae,Eucalyptus,13269
+Sapindaceae,Cupaniopsis anacardioides,13608
+Arecaceae,Washingtonia robusta,15129
+Arecaceae,Syagrus romanzoffianum,22624
+Sacramento,Anacardiaceae,4580
+Sacramento,Lythraceae,4146
+Sacramento,Platanaceae,14111
+Sacramento,Rosaceae,4285
+Sacramento,Ulmaceae,4047
+Ulmaceae,Ulmus parvifolia,4047
+Lythraceae,Lagerstroemia indica,4146
+Rosaceae,Pyrus calleryana,4285
+Anacardiaceae,Pistacia chinensis,4580
+Platanaceae,Platanus acerifolia,14111
+RanchoCucamonga,Lythraceae,12889
+RanchoCucamonga,Magnoliaceae,5016
+RanchoCucamonga,Myrtaceae,5549
+RanchoCucamonga,Platanaceae,5698
+RanchoCucamonga,Rosaceae,4941
+Rosaceae,Pyrus calleryana,4941
+Magnoliaceae,Magnolia grandiflora,5016
+Myrtaceae,Eucalyptus globulus,5549
+Platanaceae,Platanus acerifolia,5698
+Lythraceae,Lagerstroemia indica,12889
+Ontario,Altingiaceae,4392
+Ontario,Lauraceae,3900
+Ontario,Lythraceae,4630
+Ontario,Pinaceae,3307
+Ontario,Platanaceae,3328
+Pinaceae,Pinus canariensis,3307
+Platanaceae,Platanus acerifolia,3328
+Lauraceae,Cinnamomum camphora,3900
+Altingiaceae,Liquidambar styraciflua,4392
+Lythraceae,Lagerstroemia indica,4630
+LosAngeles,Altingiaceae,30061
+LosAngeles,Arecaceae,37971
+LosAngeles,Lythraceae,34729
+LosAngeles,Magnoliaceae,30988
+LosAngeles,Moraceae,28681
+Moraceae,Ficus microcarpa,28681
+Altingiaceae,Liquidambar styraciflua,30061
+Magnoliaceae,Magnolia grandiflora,30988
+Lythraceae,Lagerstroemia indica,34729
+Arecaceae,Washingtonia robusta,37971
+Irvine,Myrtaceae,7778
+Irvine,Pinaceae,7917
+Pinaceae,Pinus brutia,3339
+Myrtaceae,Eucalyptus maculata,3830
+Myrtaceae,Eucalyptus globulus,3948
+Pinaceae,Pinus canariensis,4578
+HuntingtonBeach,Arecaceae,10383
+HuntingtonBeach,Lythraceae,3896
+HuntingtonBeach,Myrtaceae,2574
+Arecaceae,Archontophoenix cunninghamiana,1665
+Myrtaceae,Eucalyptus camaldulensis,2574
+Lythraceae,Lagerstroemia indica,3896
+Arecaceae,Washingtonia robusta,4037
+Arecaceae,Syagrus romanzoffianum,4681
+GardenGrove,Arecaceae,897
+GardenGrove,Lythraceae,2358
+GardenGrove,Myrtaceae,1643
+GardenGrove,Pinaceae,1049
+GardenGrove,Sapindaceae,1438
+Arecaceae,Syagrus romanzoffianum,897
+Pinaceae,Pinus canariensis,1049
+Sapindaceae,Cupaniopsis anacardioides,1438
+Myrtaceae,Lophostemon confertus,1643
+Lythraceae,Lagerstroemia indica,2358
+Fresno,Anacardiaceae,713
+Fresno,Fagaceae,985
+Fresno,Pinaceae,749
+Fresno,Ulmaceae,444
+Fagaceae,Quercus coccinea,397
+Ulmaceae,Ulmus parvifolia,444
+Fagaceae,Quercus lobata,588
+Anacardiaceae,Pistacia chinensis,713
+Pinaceae,Cedrus deodara,749
+Anaheim,Arecaceae,4379
+Anaheim,Lauraceae,2567
+Anaheim,Lythraceae,3771
+Anaheim,Magnoliaceae,5266
+Anaheim,Pinaceae,2317
+Pinaceae,Pinus canariensis,2317
+Lauraceae,Cinnamomum camphora,2567
+Lythraceae,Lagerstroemia indica,3771
+Arecaceae,Washingtonia robusta,4379
+Magnoliaceae,Magnolia grandiflora,5266

@@ -1,0 +1,21 @@
+source,target,value
+Wisconsin,Cedarburg,1
+Wisconsin,Madison,1
+Cedarburg,Cannabaceae,1487
+Cedarburg,Fabaceae,2778
+Cedarburg,Oleaceae,3425
+Cedarburg,Sapindaceae,4783
+Cannabaceae,Celtis occidentalis,1487
+Sapindaceae,Acer saccharum,1878
+Fabaceae,Gleditsia triacanthos,2778
+Sapindaceae,Acer platanoides,2905
+Oleaceae,Fraxinus pennsylvanica,3425
+Madison,Fabaceae,3390
+Madison,Malvaceae,8863
+Madison,Oleaceae,17377
+Madison,Sapindaceae,20918
+Fabaceae,Gleditsia triacanthos,3390
+Malvaceae,Tilia cordata,3894
+Malvaceae,Tilia,4969
+Oleaceae,Fraxinus pennsylvanica,17377
+Sapindaceae,Acer platanoides,20918

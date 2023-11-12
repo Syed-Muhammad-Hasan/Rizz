@@ -1,0 +1,12 @@
+source,target,value
+Maryland,Baltimore,1
+Baltimore,Malvaceae,5932
+Baltimore,Platanaceae,6031
+Baltimore,Rosaceae,5785
+Baltimore,Sapindaceae,12895
+Baltimore,Ulmaceae,6713
+Rosaceae,Prunus,5785
+Malvaceae,Tilia cordata,5932
+Platanaceae,Platanus acerifolia,6031
+Ulmaceae,Zelkova serrata,6713
+Sapindaceae,Acer rubrum,12895

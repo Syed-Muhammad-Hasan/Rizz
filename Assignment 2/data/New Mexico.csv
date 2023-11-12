@@ -1,0 +1,12 @@
+source,target,value
+New Mexico,Albuquerque,1
+Albuquerque,Fabaceae,159
+Albuquerque,Oleaceae,148
+Albuquerque,Pinaceae,149
+Albuquerque,Platanaceae,186
+Albuquerque,Ulmaceae,216
+Oleaceae,Fraxinus,148
+Pinaceae,Pinus nigra,149
+Fabaceae,Gleditsia triacanthos,159
+Platanaceae,Platanus acerifolia,186
+Ulmaceae,Ulmus pumila,216
