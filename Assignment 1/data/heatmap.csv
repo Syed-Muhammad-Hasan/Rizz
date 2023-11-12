@@ -1,0 +1,43 @@
+city,scientific_name,count,state,common_name
+Austin,Ulmus americana,232,Texas,['American elm']
+Austin,Pyrus calleryana,62,Texas,"['Ornamental pear', 'Bradford pear']"
+Austin,Morus alba,20,Texas,['White mulberry']
+Austin,Ailanthus altissima,13,Texas,['Tree of heaven']
+Austin,Prunus cerasifera,2,Texas,['Leafed plum purple']
+Austin,Quercus rubra,2,Texas,['Red oak']
+Austin,Robinia pseudoacacia,1,Texas,['Black locust']
+Los Angeles,Pyrus calleryana,7500,California,"['Ornamental pear', 'Bradford pear']"
+Los Angeles,Morus alba,5640,California,"['White mulberry', 'Stribling fruitless mulberry', 'Weeping mulberry', 'Kingans fruitless mulberry']"
+Los Angeles,Robinia pseudoacacia,2290,California,['Black locust']
+Los Angeles,Prunus cerasifera,2227,California,['Leaf plum purple']
+Los Angeles,Ailanthus altissima,1194,California,['Tree of heaven']
+Los Angeles,Ulmus americana,1063,California,['American elm']
+Los Angeles,Quercus rubra,92,California,['Red oak']
+Washington DC,Ulmus americana,9014,District of Columbia,"['New harmony elm', 'American elm', 'Princeton elm', 'Jefferson elm', 'Augustine elm', '(see notes)']"
+Washington DC,Quercus rubra,5849,District of Columbia,['Red oak']
+Washington DC,Pyrus calleryana,952,District of Columbia,"['Bradford callery pear', 'Whitehouse callery pear', '(see notes)']"
+Washington DC,Robinia pseudoacacia,548,District of Columbia,"['Black locust', '(see notes)']"
+Washington DC,Morus alba,459,District of Columbia,"['Mulberry', '(see notes)']"
+Washington DC,Prunus cerasifera,360,District of Columbia,['Purple leaf plum']
+Washington DC,Ailanthus altissima,158,District of Columbia,"['Heaven of tree', '(see notes)']"
+Buffalo,Pyrus calleryana,1443,New York,"['Callery pear', 'Cleveland select pear', 'Chanticleer pear', 'Cleveland pride pear', 'Redspire pear']"
+Buffalo,Quercus rubra,1212,New York,['Northern red oak']
+Buffalo,Ulmus americana,425,New York,"['American elm', 'Princeton elm']"
+Buffalo,Ailanthus altissima,323,New York,['Ailanthus']
+Buffalo,Robinia pseudoacacia,159,New York,"['Purple robe locust', 'Black locust', 'Globe locust']"
+Buffalo,Morus alba,85,New York,['White mulberry']
+Buffalo,Prunus cerasifera,72,New York,"['Newport plum', 'Vesuvius plum', 'Purple leaf plum']"
+Boston,Quercus rubra,115,Massachusetts,['Northern red oak']
+Boston,Ulmus americana,11,Massachusetts,['American elm']
+Boston,Robinia pseudoacacia,8,Massachusetts,['Black locust']
+Boston,Morus alba,7,Massachusetts,['White mulberry']
+Boston,Pyrus calleryana,3,Massachusetts,['Callery pear bradford']
+Boston,Prunus cerasifera,1,Massachusetts,['Cherry plum']
+Boston,Ailanthus altissima,1,Massachusetts,['Tree of heaven']
+Columbus,Pyrus calleryana,9245,Ohio,"['Bradford callery pear', 'Callery pear', 'Aristocrat callery pear', 'Cleveland select callery pear', 'Capital callery pear', 'Whitehouse callery pear', 'Stonehill callery pear', 'Jack callery pear', 'Chanticleer callery pear']"
+Columbus,Quercus rubra,2770,Ohio,['Red oak']
+Columbus,Morus alba,697,Ohio,['White mulberry']
+Columbus,Ulmus americana,331,Ohio,"['American elm', 'Valley forge american elm', 'Princeton american elm']"
+Columbus,Robinia pseudoacacia,321,Ohio,"['Black locust', 'Purple robe black locust']"
+Columbus,Ailanthus altissima,258,Ohio,['Ailanthus (tree of heaven)']
+Columbus,Prunus cerasifera,166,Ohio,['Purple leaf plum']
