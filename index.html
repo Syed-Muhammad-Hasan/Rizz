@@ -1,91 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Data Vis by Rizz</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=1250px, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="index.css">
-  <script src="https://d3js.org/d3.v7.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 </head>
-<body>
-  <div class="navbar-wrapper">
-    <nav class="navbar navbar-inverse navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Rizz</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Assignment 1</a></li>
-            <li><a href="#">Assignment 2</a></li>
-            <li><a href="#">Assignment 3</a></li>
-            <li><a href="#">Assignment 4</a></li>
-          </ul>
-        </div>
+<body data-theme="dark">
+  <main class="padding-y-xl">
+    <div class="container max-width-adaptive-sm margin-bottom-lg">
+      <div class="text-component text-center">
+        <h1 class="text-xxxl">Data Visualization For 5M Trees dataset</h1>
+        <p class="text-md">👇 Scroll down to switch assignments.</p>
       </div>
-    </nav>
-  </div>
-  
-  <div class="jumbotron text-center">
-    <h1>Data Visualization (90529)</h1>
-    <h2>Group Name: Rizz</h2>
-    <ul class="list-group">
-      <li><b>Syed Muhammad Hasan</b></li>
-      <li><b>Muhammad Ahsan Iqbal</b></li>
-    </ul>
-    <p>As per the requirements of this course, we will be using a dataset from Kaggle and will analyze that dataset by visualizing its characteristics using different parameters. The chosen dataset is the 5M Trees dataset available <a target="_blank" href="https://www.kaggle.com/datasets/mexwell/5m-trees-dataset">here</a></p>
-  </div>
-
-<!-- Section for bar graph for each city -->
-<section class="odd-section" id="BarGraphSection">
-  <div>
-    <h3>Design Choice For Graph 1:</h3>
-    <p>Since our data is of categorical data type, so we chose horizontal bar graph to represent it as it is easier to display it. Also, our dataset is relatively big, horizontal bar graph tends to work better in narrow layouts</p>
-  </div>
-
-  <select id="citySelect" class="citySelect2dropdown">
-    <option value="1" selected>Select City</option>
-  </select>
-    <div id="visualization1">
     </div>
-</section>
-
   
-<!-- Section for heat map for the city provided in preprocessor   -->
-<section id="HeatmapSection">
-  <div>
-    <h3>Design Choice For Graph 5(heatmap):</h3>
-    <p>For this part we are required to create heatmap for different cities. Keeping our dataset in view, we had to preprocess the data in such a way that we need to keep the common trees for all selected cities. This approach allows us to visualize the results more effectively. Plus since there are big abnormalities in the count of trees, we chose the log scale for displaying colors. </p>
-  </div>
-  <div id="heatmap">
+    <div class="container max-width-adaptive-md margin-bottom-lg">
+      <ul class="stack-cards js-stack-cards">
+        <li data-theme="default" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
+          <div class="grid">
+            <div class="col-6 flex items-center height-100%">
+              <div class="text-component padding-md ">
+                <h2>Assignment One</h2>
+                <p class="display@xs">This assigment contains bar graph, stacked bar graph and heatmap for different cities.</p>
+                <p><a href="./Assignment 1/html/index.html" target="_blank" class="btn btn--accent">Check it out</a></p>
+              </div>
+            </div>
 
-  </div>
-</section>
+            <div class="col-6 height-100%">
+              <img class="block width-100% height-100% object-cover" src="assets/img/img-1.jpg" alt="Image description">
+            </div>
+          </div>
+        </li>
+      
+        <li data-theme="default" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
+          <div class="grid">
+            <div class="col-6 flex items-center height-100%">
+              <div class="text-component padding-md ">
+                <h2>Assignment Two</h2>
+                <p class="display@xs">This assigment contains Sankey diagram for different states, cities and their trees</p>
+                <p><a href="#0" target="_blank" class="btn btn--accent">Check it out</a></p>
+              </div>
+            </div>
 
-<!-- Section for Waffle chart   -->
-<section id="WaffleSection">
+            <div class="col-6 height-100%">
+              <img class="block width-100% height-100% object-cover" src="assets/img/img-2.jpg" alt="Image description">
+            </div>
+          </div>
+        </li>
+
+        <li data-theme="default" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
+          <div class="grid">
+            <div class="col-6 flex items-center height-100%">
+              <div class="text-component padding-md ">
+                <h2>Assignment Three</h2>
+                <p class="display@xs">Description</p>
+                <p><a href="#0" class="btn btn--accent">Check it out</a></p>
+              </div>
+            </div>
+
+            <div class="col-6 height-100%">
+              <img class="block width-100% height-100% object-cover" src="assets/img/img-3.jpg" alt="Image description">
+            </div>
+          </div>
+        </li>
+
+        <li data-theme="default" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
+          <div class="grid">
+            <div class="col-6 flex items-center height-100%">
+              <div class="text-component padding-md ">
+                <h2>Assignment four</h2>
+                <p class="display@xs">Description</p>
+                <p><a href="#0" class="btn btn--accent">Check it out</a></p>
+              </div>
+            </div>
+
+            <div class="col-6 height-100%">
+              <img class="block width-100% height-100% object-cover" src="assets/img/img-3.jpg" alt="Image description">
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
   
-  <div>
-    <h3>Design Choice For Graph 6(Waffle):</h3>
-    <p> </p>
-  </div>
-  <select id="citySelectWaffle" class="citySelect2dropdown">
-    <option value="1" selected>Select City</option>
-  </select>
-  <div id="waffle-chart" class="text-center">
-
-  </div>
-</section>
-<script src="index.js"></script>
+    <div class="container max-width-adaptive-sm">
+      <div class="text-component line-height-lg v-space-md">
+        <p>As per the requirements of this course, we will be using a dataset from Kaggle and will analyze that dataset by visualizing its characteristics using different parameters. The chosen dataset is the 5M Trees dataset available here</p>
+      </div>
+      
+    </div>
+    <div class="container max-width-adaptive-sm margin-bottom-lg">
+      <div class="text-component text-center">
+        <p class="text-md">Group Members:</p>
+        <p class="text-md"><b>Syed Muhammad Hasan - 5473205</b></p>
+        <p class="text-md"><b>Muhammad Ahsan Iqbal - 5573042</b></p>
+      </div>
+    </div>
+  </main>
+<script src="assets/js/scripts.js"></script>
 </body>
 </html>
