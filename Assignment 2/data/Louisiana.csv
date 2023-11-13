@@ -1,0 +1,12 @@
+source,target,value
+Louisiana,NewOrleans,1
+NewOrleans,Aquifoliaceae,4186
+NewOrleans,Cupressaceae,5409
+NewOrleans,Fagaceae,21775
+NewOrleans,Lythraceae,30244
+NewOrleans,Magnoliaceae,3471
+Magnoliaceae,Magnolia grandiflora,3471
+Aquifoliaceae,Ilex attenuata,4186
+Cupressaceae,Taxodium distichum,5409
+Fagaceae,Quercus virginiana,21775
+Lythraceae,Lagerstroemia indica,30244

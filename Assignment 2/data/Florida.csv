@@ -1,0 +1,41 @@
+source,target,value
+Florida,Tampa,1
+Florida,Orlando,1
+Florida,Miami,1
+Florida,CapeCoral,1
+Tampa,Arecaceae,1381
+Tampa,Fagaceae,8634
+Tampa,Lythraceae,2851
+Tampa,Pinaceae,1236
+Pinaceae,Pinus elliottii,1236
+Arecaceae,Sabal palmetto,1381
+Lythraceae,Lagerstroemia indica,2851
+Fagaceae,Quercus geminata,3251
+Fagaceae,Quercus virginiana,5383
+Orlando,Arecaceae,2855
+Orlando,Fagaceae,27746
+Orlando,Lythraceae,14988
+Orlando,Ulmaceae,2609
+Ulmaceae,Ulmus parvifolia,2609
+Arecaceae,Sabal palmetto,2855
+Fagaceae,Quercus laurifolia,10620
+Lythraceae,Lagerstroemia indica,14988
+Fagaceae,Quercus virginiana,17126
+Miami,Arecaceae,77
+Miami,Musaceae,33
+Miami,Pinaceae,46
+Miami,Tachinidae,34
+Musaceae,Musa acuminata,33
+Tachinidae,Eugenia,34
+Arecaceae,Adonidia merrillii,36
+Arecaceae,Sabal palmetto,41
+Pinaceae,Pinus elliottii,46
+CapeCoral,Arecaceae,6632
+CapeCoral,Cupressaceae,1724
+CapeCoral,Fagaceae,6630
+CapeCoral,Pinaceae,3298
+Fagaceae,Quercus laurifolia,903
+Cupressaceae,Taxodium distichum,1724
+Pinaceae,Pinus elliottii,3298
+Fagaceae,Quercus virginiana,5727
+Arecaceae,Sabal palmetto,6632

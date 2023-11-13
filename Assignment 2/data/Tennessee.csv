@@ -1,0 +1,21 @@
+source,target,value
+Tennessee,Nashville,1
+Tennessee,Knoxville,1
+Nashville,Altingiaceae,131
+Nashville,Fagaceae,154
+Nashville,Platanaceae,281
+Nashville,Ulmaceae,286
+Ulmaceae,Ulmus parvifolia,120
+Altingiaceae,Liquidambar styraciflua,131
+Fagaceae,Quercus phellos,154
+Ulmaceae,Zelkova serrata,166
+Platanaceae,Platanus acerifolia,281
+Knoxville,Cornaceae,602
+Knoxville,Fabaceae,323
+Knoxville,Lythraceae,517
+Knoxville,Sapindaceae,1277
+Fabaceae,Cercis canadensis,323
+Lythraceae,Lagerstroemia indica,517
+Sapindaceae,Acer saccharum,594
+Cornaceae,Cornus florida,602
+Sapindaceae,Acer rubrum,683

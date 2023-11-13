@@ -1,0 +1,12 @@
+source,target,value
+Nevada,LasVegas,1
+LasVegas,Arecaceae,1844
+LasVegas,Fabaceae,1483
+LasVegas,Lamiaceae,1478
+LasVegas,Oleaceae,4480
+LasVegas,Pinaceae,5888
+Lamiaceae,Vitex agnus-castus,1478
+Fabaceae,Acacia stenophylla,1483
+Arecaceae,Washingtonia robusta,1844
+Oleaceae,Fraxinus velutina,4480
+Pinaceae,Pinus brutia,5888

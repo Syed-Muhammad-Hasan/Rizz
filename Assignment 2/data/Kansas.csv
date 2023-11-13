@@ -1,0 +1,11 @@
+source,target,value
+Kansas,OverlandPark,1
+OverlandPark,Altingiaceae,1983
+OverlandPark,Fagaceae,3419
+OverlandPark,Oleaceae,9583
+OverlandPark,Sapindaceae,13289
+Oleaceae,Fraxinus pennsylvanica,1929
+Altingiaceae,Liquidambar styraciflua,1983
+Fagaceae,Quercus palustris,3419
+Oleaceae,Fraxinus americana,7654
+Sapindaceae,Acer rubrum,13289
