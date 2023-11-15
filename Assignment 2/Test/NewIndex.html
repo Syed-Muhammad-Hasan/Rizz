@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Data Vis by Rizz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1250px, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="multiselect-dropdown.js" ></script>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Multiselect-dropdown demo!</h1>
+    <div class="row"><div class="col ">
+      <label>Select 2</label>
+        <select name="field2" id="field2" multiple multiselect-search="true" multiselect-select-all="true" multiselect-max-items="3" onchange="console.log(this.selectedOptions)">
+          <option>Abarth</option>
+          <option>Alfa Romeo</option>
+          <option>Aston Martin</option>
+          <option>Audi</option>
+          <option>Bentley</option>
+          <option>BMW</option>
+          <option>Bugatti</option>
+        </select>
+
+      </div></div>
+
+
+    <div style="padding-left: 142px; padding-top: 30px; align-content: center;" id="svgContainer"></div>
+
+    <script type="module" src="NewIndex.js"></script>
+</body>
+</html>
