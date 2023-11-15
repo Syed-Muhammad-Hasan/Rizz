@@ -10,6 +10,7 @@ import * as d3Sankey from 'https://cdn.skypack.dev/d3-sankey@0.12.0';
 
 let tree;
 
+// Get Data CSV
 fetch('data/Arizona.csv')
       .then(response => {
         if (!response.ok) {
