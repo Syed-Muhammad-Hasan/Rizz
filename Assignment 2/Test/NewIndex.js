@@ -76,7 +76,7 @@ function SankeyChart({
     linkPath = d3Sankey.sankeyLinkHorizontal(), // given d in (computed) links, returns the SVG path
     linkTitle = d => `${d.source.id} → ${d.target.id}\n${format(d.value)}`, // given d in (computed) links
     linkColor = "source-target", // source, target, source-target, or static color
-    linkStrokeOpacity = 0.5, // link stroke opacity
+    linkStrokeOpacity = 0.7, // link stroke opacity
     linkMixBlendMode = "multiply", // link blending mode
     colors = d3.schemeTableau10, // array of colors
     width = 928, // outer width, in pixels

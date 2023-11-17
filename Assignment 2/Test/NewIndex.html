@@ -13,14 +13,19 @@
 
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="multiselect-dropdown.js" ></script>
+<style>
+  body{
+    /* background-image: url(./img-2-safeimagekit.jpeg); */
+    background-image: url(./test.jpeg)
+  }
+</style>
 </head>
-<body>
-
+<body >
   <div class="container">
-    <h1>Multiselect-dropdown demo!</h1>
-    <div class="row"><div class="col ">
-      <label>Select 2</label>
-        <select name="field2" id="field2" multiple multiselect-search="true" multiselect-select-all="true" multiselect-max-items="3" onchange="console.log(this.selectedOptions)">
+    <div class="row">
+      <div class="col">
+        <label>Choose States</label>
+        <select class="js-example-basic-multiple js-states form-control" name="field2" id="field2" multiple multiselect-search="true" multiselect-select-all="true" multiselect-max-items="3" onchange="console.log(this.selectedOptions)" style="width: 150px;">
           <option>Abarth</option>
           <option>Alfa Romeo</option>
           <option>Aston Martin</option>
@@ -30,7 +35,8 @@
           <option>Bugatti</option>
         </select>
 
-      </div></div>
+      </div>
+    </div>
 
 
     <div style="padding-left: 142px; padding-top: 30px; align-content: center;" id="svgContainer"></div>
