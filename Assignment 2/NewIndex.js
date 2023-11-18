@@ -8,51 +8,221 @@ import Papa from 'https://cdn.skypack.dev/papaparse@5.3.0';
 import * as d3 from 'https://cdn.skypack.dev/d3@7.6.0';
 import * as d3Sankey from 'https://cdn.skypack.dev/d3-sankey@0.12.0';
 
-let tree;
+const stateDropdown = document.getElementById('id_label_multiple');
 
-// Get Data CSV
-fetch('data/Arizona.csv')
+
+// Fetch the JSON file containing state names
+fetch('data/StatesDropdown.json')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();  // Parse the response as JSON
+  })
+  .then(statesData => {
+    // Parse the string into a JavaScript array
+    const statesArray = JSON.parse(statesData);
+
+    // Iterate through the array of state names
+    statesArray.forEach(state => {
+      const option = document.createElement('option');
+      option.value = state;
+      option.text = state;
+      stateDropdown.appendChild(option);
+    });
+  })
+  .catch(error => {
+    console.error('Error loading or parsing the JSON file:', error);
+  });
+
+
+
+
+$('.js-example-basic-multiple').select2({
+  tags: "true",
+  placeholder: "Select an option",
+  allowClear: true
+});
+
+
+
+$('.js-example-basic-multiple').on('change', function() {
+  var selectedStates = $('.js-example-basic-multiple').val();
+  console.log(selectedStates);
+  const promises = selectedStates.map(selectedState => {
+    // Construct the path to the CSV file based on the selected state
+    const csvFile = `data/${selectedState}.csv`;
+
+    // Fetch and parse the selected CSV file
+    return fetch(csvFile)
       .then(response => {
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error(`Network response was not ok for file: ${csvFile}`);
         }
         return response.text();
       })
       .then(csvData => {
-        // Parse the CSV data into an array of objects
         return Papa.parse(csvData, {
-          header: true, // Assumes the first row is the header
+          header: true,
           dynamicTyping: true,
         });
-      })
-      .then(parsedData => {
-        // Assign the array of objects to the variable
-        tree = parsedData.data;
-        console.log("ASDSAD", tree);
-
-        let chart = SankeyChart({
-          links: tree
-        }, {
-          nodeGroup: d => d.id.split(/\W/)[0], // take first word for color
-          // nodeAlign, // e.g., d3.sankeyJustify; set by input above
-          // linkColor, // e.g., "source" or "target"; set by input above
-          format: (f => d => `${f(d)} Trees`)(d3.format(",.1~f")),
-          // width,
-          // height: 600
-        })
-      
-        const svgContainer = document.getElementById('svgContainer');
-        svgContainer.appendChild(chart);
-      })
-      .catch(error => {
-        console.error('Error loading or parsing the file:', error);
       });
+  });
+
+  // Use Promise.all to wait for all promises to resolve
+  Promise.all(promises)
+    .then(parsedDatas => {
+      // Combine the data from all selected CSV files into a single array
+      let mergedData = parsedDatas.reduce((accumulator, current) => {
+        console.log("CURRENT DATA: ", current.data)
+        return accumulator.concat(current.data);
+      }, []);
+
+      // Your existing code for creating the Sankey chart
+
+      mergedData = mergedData.filter(obj => Object.values(obj).every(value => value !== null));
+
+      console.log("ASDSADASDASDSAD ", mergedData.length);
+      let height = 0;
+      height = mergedData.length - 133 ;
+      if(height>0)
+      {
+        height = height * 5
+        console.log("THIS IS WID: ", height)
+      }
+      else{
+        height = 0
+        console.log("THIS IS WID: ", height)
+      }
+
+      height = height + 600
+
+      console.log("THIS IS WID: ", height)
+
+      tree = mergedData
+
+      let chart = SankeyChart({
+        links: tree
+      }, {
+        nodeGroup: d => d.id, // Adjust if necessary based on your data structure
+        format: (f => d => `${f(d)} Trees`)(d3.format(",.1~f")),
+        height
+      });
+
+      const svgContainer = document.getElementById('svgContainer');
+      svgContainer.innerHTML = ''; // Clear previous chart
+      svgContainer.appendChild(chart);
+    })
+    .catch(error => {
+      console.error('Error loading or parsing the files:', error);
+    });
+})
+
+// THIS IS GOOD
+
+// const csvFiles = [
+//   'data/Arizona.csv',
+//   'data/California.csv',
+//   'data/Colorado.csv'
+// ];
+
+// // Create an array of promises for fetching and parsing each CSV file
+// const promises = csvFiles.map(file => {
+//   return fetch(file)
+//     .then(response => {
+//       if (!response.ok) {
+//         throw new Error(`Network response was not ok for file: ${file}`);
+//       }
+//       return response.text();
+//     })
+//     .then(csvData => {
+//       return Papa.parse(csvData, {
+//         header: true,
+//         dynamicTyping: true,
+//       });
+//     });
+// });
+
+// // Use Promise.all to wait for all promises to resolve
+// Promise.all(promises)
+//   .then(parsedDatas => {
+//     // Combine the data from all CSV files into a single array
+//     const mergedData = parsedDatas.reduce((accumulator, current) => {
+//       return accumulator.concat(current.data);
+//     }, []);
+
+//     // Your existing code for creating the Sankey chart
+//     tree = mergedData;
+//     console.log("ASDSAD", tree);
+
+//     let chart = SankeyChart({
+//       links: tree
+//     }, {
+//       nodeGroup: d => d.id.split(/\W/)[0],
+//       format: (f => d => `${f(d)} Trees`)(d3.format(",.1~f")),
+//     });
+
+//     const svgContainer = document.getElementById('svgContainer');
+//     svgContainer.appendChild(chart);
+//   })
+//   .catch(error => {
+//     console.error('Error loading or parsing the files:', error);
+//   });
+
+// THIS IS GOOD
+
+// $('.js-example-basic-single').select2({
+//   placeholder: 'Select an option'
+// });
+
+let tree;
+
+
+// FOR ONE FILE
+
+// Get Data CSV
+// fetch('data/Arizona.csv')
+//       .then(response => {
+//         if (!response.ok) {
+//           throw new Error('Network response was not ok');
+//         }
+//         return response.text();
+//       })
+//       .then(csvData => {
+//         // Parse the CSV data into an array of objects
+//         return Papa.parse(csvData, {
+//           header: true, // Assumes the first row is the header
+//           dynamicTyping: true,
+//         });
+//       })
+//       .then(parsedData => {
+//         // Assign the array of objects to the variable
+//         tree = parsedData.data;
+//         console.log("ASDSAD", tree);
+
+//         let chart = SankeyChart({
+//           links: tree
+//         }, {
+//           nodeGroup: d => d.id.split(/\W/)[0], // take first word for color
+//           // nodeAlign, // e.g., d3.sankeyJustify; set by input above
+//           // linkColor, // e.g., "source" or "target"; set by input above
+//           format: (f => d => `${f(d)} Trees`)(d3.format(",.1~f")),
+//           // width,
+//           // height: 600
+//         })
+      
+//         const svgContainer = document.getElementById('svgContainer');
+//         svgContainer.appendChild(chart);
+//       })
+//       .catch(error => {
+//         console.error('Error loading or parsing the file:', error);
+//       });
 
 
 
 function SankeyChart({
     nodes, // an iterable of node objects (typically [{id}, …]); implied by links if missing
-    links // an iterable of link objects (typically [{source, target}, …])
+    links, // an iterable of link objects (typically [{source, target}, …])
   }, {
     format = ",", // a function or format specifier for values in titles
     align = "justify", // convenience shorthand for nodeAlign
