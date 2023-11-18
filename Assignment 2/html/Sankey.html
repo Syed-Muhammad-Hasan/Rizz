@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Data Vis by Rizz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1250px, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <link rel="stylesheet" href="../css/sankey.css"></link>
+</head>
+<body>
+  <header>
+      <div class="d-flex justify-content-center py-3 text-center" id="header">
+        <h1>Assignment 2</h1>
+      <div/>
+    </div>
+  </header>
+  <header>
+        <h3 >Design Choice For Alluvial Graph:</h3>
+        <p id="description">We have started with higher level of distribution i.e. States, then it comes down to the cities in that state, then it shows the family name of the tree species retrieved from GBIF API and the plant's scientfic name.</p>
+  </header>
+   
+    
+
+ 
+
+  <div id="mainContainer" class="container">
+    
+    <div class="row">
+      <div class="col">
+        <label style="font-size: 20px;">Select States</label>
+        <select style= "width: 75%" class="js-example-basic-multiple js-states form-control" id="id_label_multiple" multiple="multiple">
+      </select>
+    </div>
+    </div>
+    
+  </div>
+
+  <div style="padding-left: 220px; padding-top: 30px; padding-bottom: 30px; align-content: center;" id="svgContainer">
+  </div>
+
+    <script type="module" src="../js/Sankey.js"></script>
+</body>
+</html>
