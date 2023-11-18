@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200&display=swap');
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Roboto Slab', serif;
+}
+
+p,li {
+    font-family: 'Fira Sans', sans-serif;
+}
+body{
+    background-image: url(../assets/test.jpeg)
+}
+#mainContainer{
+    padding-top: 30px; 
+    font-family: 'Roboto Slab', serif;
+    margin-left: 180px;
+}
+header{
+    color: white;
+    width: 100%;
+    background-color: #3a1d2b;
+}
+#description{
+    font-size: medium;
+}
