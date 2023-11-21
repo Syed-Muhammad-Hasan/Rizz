@@ -13,3 +13,105 @@ p,li {
   width: 200px;
  }
  
+
+ body {
+    background-color: #F7F4E9;
+    font-family: sans-serif;
+  }
+  
+  .chart-section {
+    margin: 2rem auto;
+    padding: 1rem;
+    width: calc(100% - 2rem);
+    max-width: 700px;
+    
+    #chart-wrap {
+      height: 500px;
+      width: 100%;
+      position: relative;
+      
+      .chart-tooltip {
+         margin-left: 10px;
+         position: absolute;
+         z-index: 10;
+         
+         .chart-tooltip-wrap {
+            background-color: #181818;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+            display: block;
+            padding: .875rem;
+  
+            p {
+             color: #fff;
+             font-size: .875rem;
+             line-height: 1.75;
+             margin: 0;
+           }
+         }
+        }
+   
+      svg {
+        margin: auto;
+        
+        .y-axis {
+           .domain {
+              display: none;
+            }
+          
+          .tick {
+            line {
+              stroke: #aaa;
+              stroke-dasharray: 3,3;
+            }
+            
+            &:first-child {
+              line {
+                stroke: #555;
+                stroke-dasharray: 0;
+              }
+            }
+          }
+        }
+        
+        .bar-labels {
+          font-size: .875rem;
+        }
+        
+        .tick {
+          text {
+            font-size: .875rem;
+          }
+        }
+      }
+      
+      .legend {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        margin: 2rem auto;
+        width: 100%;
+  
+        .legend-group {
+          align-items: center;
+          display: flex;
+          flex-basis: 100px;
+          flex-direction: row;
+          gap: 8px;
+          justify-content: flex-start;
+          
+          .legend-box {
+            height: 20px;
+            margin: 0;
+            width: 20px;
+          }
+          
+          .legend-label {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
