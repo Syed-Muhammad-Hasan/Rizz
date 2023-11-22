@@ -157,7 +157,7 @@
 
 
 
-    const margin = { top: 20, right: 50, bottom: 40, left: 70 };
+const margin = { top: 20, right: 50, bottom: 40, left: 70 };
 const wrap = d3.select('#chart-wrap');
 let wrapWidth = parseInt(wrap.style('width'));
 let wrapHeight = parseInt(wrap.style('height'));
@@ -165,7 +165,7 @@ let width = wrapWidth - margin.left - margin.right;
 let height = wrapHeight - margin.top - margin.bottom;
 const x = d3.scaleBand();
 const y = d3.scaleLinear();
-const src = '../data/stacked_other.csv'; // Replace with the correct path to your data
+const src = '../data/stackedTreeData.csv'; // Replace with the correct path to your data
 const colors = d3.scaleOrdinal(['#5626C4', '#E60576', '#2CCCC3', '#FACD3D', '#181818', '#CCC8AA']);
 let barGroup;
 let tooltipChart;
