@@ -44,3 +44,6 @@ header{
 select, button {
     padding: 5px;
 }
+#loadingDiv{
+    display: none;
+}
