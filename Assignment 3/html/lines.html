@@ -41,27 +41,28 @@
         <a class="nav-link" data-bs-toggle="pill" href="#RadarChart">Radar Chart</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="pill" href="#RigidLines">Rigid Lines</a>
+        <a class="nav-link" data-bs-toggle="pill" href="#RidgeLine">Ridge Lines</a>
       </li>
     </ul>
   
     <!-- Tab panes -->
     <div class="tab-content">
+      <!-- Line Chart tab-->
       <div id="LinesChart" class="container tab-pane active"><br>
         <header>
           <h3 >Design Choice For Line Chart:</h3>
           <p id="description">Some description</p>
         </header>
         <div id="liveAlertPlaceholder"></div>
-        <div id="mainContainer">
-            <select class="form-select" id="SelectState">
+        <div class="mainContainer">
+            <select class="form-select StateSelectClass" id="SelectState">
               <option selected disabled>Please select state</option>
             </select>
-            <select name="Year" class="form-select" id="SelectYear" data-placeholder="Select years (upto 10)"  multiple>
+            <select name="Year" class="form-select YearSelectClass" id="SelectYear" data-placeholder="Select years (upto 10)"  multiple>
               
             </select>
             
-            <button type="button" class="btn btn-dark" id="PlotLineChart" onclick="PlotLineClicked()">Plot Chart</button>
+            <button type="button" class="btn btn-dark buttonClass" id="PlotLineChart" onclick="PlotLineClicked()">Plot Chart</button>
         </div>
         <div style="padding-left: 220px; padding-top: 30px; padding-bottom: 30px; align-content: center;" id="LineChartContainer">
         </div>
@@ -69,14 +70,32 @@
         <script type="text/javascript" src="../js/lines.js"></script>
       </div>
       
-      
+      <!-- Radar Chart tab-->
       <div id="RadarChart" class="container tab-pane fade"><br>
         <h3>Menu 1</h3>
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
-      <div id="RigidLines" class="container tab-pane fade"><br>
-        <h3>Menu 2</h3>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+
+      <!-- Rigid Lines tab-->
+      <div id="RidgeLine" class="container tab-pane fade"><br>
+        <header>
+          <h3 >Design Choice For RidgeLine lines Chart:</h3>
+          <p id="description">Some description</p>
+        </header>
+        <div id="liveAlertPlaceholderRigid"></div>
+        <div class="mainContainer">
+          <select class="form-select StateSelectClass" id="SelectStateRigid">
+            <option selected disabled>Please select state</option>
+          </select>
+          <select name="YearRigid" class="form-select YearSelectClass" id="SelectYearRigid" data-placeholder="Select years (upto 10)"  multiple>
+            
+          </select>
+          
+          <button type="button" class="btn btn-dark buttonClass" id="PlotRigidChart" onclick="RigidLineClicked()">Plot Chart</button>
+        </div>
+        <div style="padding-left: 220px; padding-top: 30px; padding-bottom: 30px; align-content: center;" id="ridgeLineContainer">
+        </div>
+        <script type="text/javascript" src="../js/RidgeLine.js"></script>
       </div>
     </div>
   </div>

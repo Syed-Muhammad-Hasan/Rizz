@@ -9,7 +9,7 @@ p {
     font-family: 'Fira Sans', sans-serif;
 }
 
-#mainContainer{
+.mainContainer{
     padding-top: 30px;
     font-family: 'Roboto Slab', serif;
     display: flex;
@@ -31,16 +31,24 @@ header{
 #description{
     font-size: medium;
 }
- #SelectState{
+.StateSelectClass{
     width: 20%!important;
 } 
 
-#SelectYear{
+.YearSelectClass{
      width: 70% !important;
 }
-#PlotLineChart{
+
+
+.buttonClass{
     width: 10% !important;
 }
+
+#PlotRigidChart{
+    right: 109px !important;
+    position: absolute;
+}
+
 select, button {
     padding: 5px;
 }

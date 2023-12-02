@@ -7,6 +7,7 @@ $( '#SelectYear' ).select2( {
     maximumSelectionLength: 10,
     closeOnSelect: false,
 } );
+
 fetch("../data/States.json")
       .then(response => response.json())
       .then(data => {
@@ -37,17 +38,17 @@ function PlotLineClicked () {
     stateValue = $("#SelectState").val();
     yearValues = $("#SelectYear").val();
     if( yearValues.length == 0 || stateValue == null){
-        return triggerAlert();
+        return triggerAlert('liveAlertPlaceholder');
     }
     createVisualization(stateValue, yearValues);
 
 }
-function triggerAlert(){
-    alertMessage('Please check if you have selected the options from dropdowns!', 'danger');
+function triggerAlert(PlaceHolderId){
+    alertMessage('Please check if you have selected the options from dropdowns!', 'danger',PlaceHolderId);
 }
 
-function alertMessage(message, type) {
-    var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+function alertMessage(message, type, PlaceHolderId) {
+    var alertPlaceholder = document.getElementById(PlaceHolderId)
     var wrapper = document.createElement('div')
     wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible d-flex align-items-center" role="alert"> <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div></div>'
   
@@ -77,9 +78,9 @@ function filterDataBySelectedYears(data, state, selectedYears) {
 
 // Function for creating the visualization
 function createVisualization(selectedState, selectedYears) {
-    const minTemperatureFile = "../data/minData.csv";
-    const maxTemperatureFile = "../data/maxData.csv";
-    const avgTemperatureFile = "../data/avgData.csv";
+    const minTemperatureFile = "../data/lineChart/minData.csv";
+    const maxTemperatureFile = "../data/lineChart/maxData.csv";
+    const avgTemperatureFile = "../data/lineChart/avgData.csv";
 
     // Load data for minimum, maximum, and average temperatures
     Promise.all([
@@ -214,6 +215,7 @@ function createVisualization(selectedState, selectedYears) {
 
         svg.append("g")
             .call(d3.axisLeft(yScale));
+        
 
     // A function that set idleTimeOut to null
       let idleTimeout
