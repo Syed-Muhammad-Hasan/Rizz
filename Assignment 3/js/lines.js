@@ -109,14 +109,14 @@ function createVisualization(selectedState, selectedYears) {
 
         // Set up dimensions and margins for the chart
         const margin = { top: 50, right: 50, bottom: 50, left: 50 };
-        const width = 800 - margin.left - margin.right;
+        const width = 1000 - margin.left - margin.right;
         const height = 500 - margin.top - margin.bottom;
 
         // Create SVG element
         d3.select("#LineChartContainer").select("svg").remove();
         const svg = d3.select("#LineChartContainer")
             .append("svg")
-            .attr("width", width + margin.left + margin.right)
+            .attr("width", width  + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)
             .append("g")
             .attr("transform", `translate(${margin.left},${margin.top})`);
@@ -125,7 +125,7 @@ function createVisualization(selectedState, selectedYears) {
        
         const xScale = d3.scaleTime()
             .domain(d3.extent(mergedData, function(d) { return d.date; }))
-            .range([ 0, width ]);
+            .range([ 0, width -200 ]);
             xAxis = svg.append("g")
             .attr("transform", `translate(0, ${height})`)
             .call(d3.axisBottom(xScale));
@@ -135,19 +135,25 @@ function createVisualization(selectedState, selectedYears) {
             .range([ height, 0 ]);
             yAxis = svg.append("g")
             .call(d3.axisLeft(yScale));
+            svg.append("text")
+            .attr("text-anchor", "end")
+            .attr("transform", "rotate(-90)")
+            .attr("y", -margin.left+20)
+            .attr("x", -margin.top)
+            .text("Temperature")
 
         //Add a clipPath: everything out of this area won't be drawn.
         const clip = svg.append("defs").append("svg:clipPath")
             .attr("id", "clip")
             .append("svg:rect")
-            .attr("width", width )
+            .attr("width", width -200)
             .attr("height", height )
             .attr("x", 0)
             .attr("y", 0);
 
         //Add brushing
         const brush = d3.brushX()                   // Add the brush feature using the d3.brush function
-          .extent( [ [0,0], [width,height] ] )  // initialise the brush area: start at 0,0 and finishes at width,height: it means I select the whole graph area
+          .extent( [ [0,0], [width-200,height] ] )  // initialise the brush area: start at 0,0 and finishes at width,height: it means I select the whole graph area
           .on("end", updateChart)
 
 
@@ -215,6 +221,15 @@ function createVisualization(selectedState, selectedYears) {
 
         svg.append("g")
             .call(d3.axisLeft(yScale));
+
+           
+            svg.append("circle").attr("cx",width -110 ).attr("cy",20).attr("r", 6).style("fill", "red")
+            svg.append("text").attr("x", width -95).attr("y", 20).text("Maximum Temp").style("font-size", "15px").attr("alignment-baseline","middle")
+            svg.append("circle").attr("cx",width -110 ).attr("cy",50).attr("r", 6).style("fill", "green")
+            svg.append("text").attr("x", width -95).attr("y", 50).text("Average Temp").style("font-size", "15px").attr("alignment-baseline","middle")
+            svg.append("circle").attr("cx",width -110 ).attr("cy",80).attr("r", 6).style("fill", "blue")
+            svg.append("text").attr("x", width -95).attr("y", 80).text("Minimum Temp").style("font-size", "15px").attr("alignment-baseline","middle")
+            
         
 
     // A function that set idleTimeOut to null
@@ -260,6 +275,7 @@ function createVisualization(selectedState, selectedYears) {
             .attr("cx", d => xScale(d.date))
             .attr("cy", d => yScale(d.avgTemp))
       }
+      
   
       // If user double click, reinitialize the chart
       svg.on("dblclick",function(){

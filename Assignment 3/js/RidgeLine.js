@@ -59,19 +59,19 @@ function filterDataBySelectedYearsForRigid(data, state, selectedYears) {
 }
 function createVisualizationRigid(selectedState, selectedYears){
     const margin = {top: 80, right: 30, bottom: 50, left:50},
-        width = 800 - margin.left - margin.right,
+        width = 1000 - margin.left - margin.right,
         height = 400 - margin.top - margin.bottom;
     
     d3.select("#ridgeLineContainer").select('svg').remove();
     // append the svg object to the body of the page
     const svg = d3.select("#ridgeLineContainer")
       .append("svg")
-        .attr("width", width + margin.left + margin.right)
+        .attr("width", width + 100 + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
       .append("g")
         .attr("transform",
               `translate(${margin.left},${margin.top})`);
-
+              
     d3.csv("../data/RigidLines/RidgeLine.csv").then(function(fullData) {
         // Convert string data to numbers
         data = filterDataBySelectedYearsForRigid(fullData,selectedState,selectedYears)
@@ -100,8 +100,8 @@ function createVisualizationRigid(selectedState, selectedYears){
         var blueGradient = d3.scaleLinear().domain([0, 1]).range([blueStart, blueEnd]);
         var redGradient = d3.scaleLinear().domain([0, 1]).range([redStart, redEnd]);
       
-        minTemperatureColors[year] = blueGradient(years.indexOf(year) / (years.length - 1)).toString();// Ye 0 wala masla hai
-        maxTemperatureColors[year] = redGradient(years.indexOf(year) / (years.length - 1)).toString();
+        minTemperatureColors[year] = blueGradient(years.indexOf(year) / (years.length )).toString();// Ye 0 wala masla hai
+        maxTemperatureColors[year] = redGradient(years.indexOf(year) / (years.length )).toString();
       });
       function getColor(temperatureType, year) {
         if (temperatureType === "MinTemperature") {
@@ -110,6 +110,16 @@ function createVisualizationRigid(selectedState, selectedYears){
           return maxTemperatureColors[year];
         }
       }
+      var gap =50
+      for(var i=0; i<years.length; i++){
+        gap = gap+15
+        svg.append("circle").attr("cx",width -gap ).attr("cy",0).attr("r", 6).style("fill", minTemperatureColors[years[i]])
+        svg.append("circle").attr("cx",width -gap ).attr("cy",30).attr("r", 6).style("fill", maxTemperatureColors[years[i]])
+      }
+      
+      svg.append("text").attr("x", width -gap).attr("y", -15).text("Minimum Temp").style("font-size", "10px").attr("alignment-baseline","left")
+      svg.append("text").attr("x", width -gap).attr("y", 18).text("Maximum Temp").style("font-size", "10px").attr("alignment-baseline","left")
+
       function createArrayWithIntervals(maxNumber, interval) {
         const result = [];
         maxNumber = Math.ceil(maxNumber / interval) * interval;
@@ -122,7 +132,7 @@ function createVisualizationRigid(selectedState, selectedYears){
       maxRange = Math.ceil(d3.max(data).MaxTemperature / 10) * 10 + 10;
       var x = d3.scaleLinear()
         .domain([0, maxRange]) // Adjust the domain based on your data range
-        .range([0, width]);
+        .range([0, width-200]);
       
         var xAxis = svg.append("g")
         .attr("class", "xAxis")
@@ -132,7 +142,7 @@ function createVisualizationRigid(selectedState, selectedYears){
       // Add X axis label
       svg.append("text")
         .attr("text-anchor", "end")
-        .attr("x", width)
+        .attr("x", width-200)
         .attr("y", height + 40)
         .text("Temperature");
       // Compute kernel density estimation for each column (year and temperature type)
