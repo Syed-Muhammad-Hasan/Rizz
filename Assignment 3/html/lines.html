@@ -87,7 +87,7 @@
     ">
           <h3 >Design Choice For Radar Chart:</h3>
           <p id="des">
-            The chosen Radar chart design effectively visualizes monthly temperature variations over multiple years for any selected state. Each year is represented as a separate group, allowing for clear trend identification. The radial axis spans from 0 to 100, emphasizing temperature values. Customized hover labels provide precise information, displaying the month and temperature upon interaction. This design ensures a concise and insightful representation of annual temperature patterns.</p>
+            The chosen Radar chart design effectively visualizes monthly temperature variations over multiple years for any selected state. Each year is represented as a separate group, allowing for clear trend identification. Using the year legend you can enable or disable the lines for the specific year. The radial axis spans from 0 to 100, emphasizing temperature values. Customized hover labels provide precise information, displaying the month and temperature upon interaction. This design ensures a concise and insightful representation of annual temperature patterns.</p>
         </header>
         <!-- <div id="liveAlertPlaceholder"></div> -->
         <div class="mainContainer">
@@ -103,15 +103,19 @@
 
         <div class="row">
       
-          <div class="col-md-4" id='dataMin'><!-- Plotly chart will be 
-            drawn inside this DIV --></div>
+          <div class="col-md-4" id='dataMin'></div>
 
-            <div class="col-md-4" id='dataAvg'><!-- Plotly chart will be 
-              drawn inside this DIV --></div>
+            <div class="col-md-4" id='dataAvg'></div>
 
-              <div class="col-md-4" id='dataMax'><!-- Plotly chart will be 
-                drawn inside this DIV --></div>
+              <div class="col-md-4" id='dataMax'></div>
         </div>
+      
+          <!-- <div class="" id='dataMin'></div>
+
+            <div class="" id='dataAvg'></div>
+
+              <div class="" id='dataMax'></div> -->
+
 
         <div id="loadingDiv"><img src="../../assets/img/logo.svg"></div>
         <script type="text/javascript" src="../js/RadarChart.js"></script>

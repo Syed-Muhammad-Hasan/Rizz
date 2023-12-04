@@ -94,7 +94,9 @@ function getData(selectedState, selectedYears) {
                 visible: true,
                 range: [0, 100]
               }
-            }
+            },
+            // width: 600, // Set width to 800 pixels
+            // height: 500
           }
 
           layoutMin = {
@@ -104,7 +106,9 @@ function getData(selectedState, selectedYears) {
                 visible: true,
                 range: [0, 100]
               }
-            }
+            },
+            // width: 600, // Set width to 800 pixels
+            // height: 500
           }
 
           layoutMean = {
@@ -114,7 +118,9 @@ function getData(selectedState, selectedYears) {
                 visible: true,
                 range: [0, 100]
               }
-            }
+            },
+            // width: 600, // Set width to 800 pixels
+            // height: 500
           }
 
         console.log(data) 
