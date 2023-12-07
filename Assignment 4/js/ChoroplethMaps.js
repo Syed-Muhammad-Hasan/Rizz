@@ -1,83 +1,5 @@
-// // Width and height of the SVG container
-// var width = 800;
-// var height = 500;
-
-// // Create an SVG container
-// var svg = d3.select('#ChoroplethMapsContainer') // Assuming ChoroplethMapsContainer is an ID
-//   .append('svg')
-//   .attr('width', width)
-//   .attr('height', height);
-
-// // Define a projection (for US map)
-// var projection = d3.geoAlbersUsa()
-//   .translate([width / 2, height / 2]) // Center the map
-//   .scale([1000]); // Adjust the scale as needed
-
-// // Define a path generator
-// var path = d3.geoPath()
-//   .projection(projection);
-
-// // Load US states GeoJSON data
-// Promise.all([
-//     d3.json("https://raw.githubusercontent.com/PublicaMundi/MappingAPI/master/data/geojson/us-states.json"),
-//     d3.csv("../data/State_Level_data.csv") // Removed the function for parsing CSV
-// ]).then(function(loadData){
-//     let topo = loadData[0]; // GeoJSON data
-//     let data = d3.map(loadData[1], function(d) { return d.id; }); // Map data for tree counts
-//     console.log(data);
-//     // Set up color scale
-//     var colorScale = d3.scaleQuantize()
-//         .range(['#f7fbff', '#deebf7', '#c6dbef', '#9ecae1', '#6baed6', '#4292c6', '#2171b5', '#08519c', '#08306b']); // Adjust color range
-
-//     // Set domain for color scale using tree data values
-//     colorScale.domain([0, d3.max(loadData[1], function(d) { return +d.totalTrees; })]);
-
-//     let mouseOver = function(d) {
-//         d3.selectAll(".State")
-//             .transition()
-//             .duration(200)
-//             .style("opacity", .5)
-//         d3.select(this)
-//             .transition()
-//             .duration(200)
-//             .style("opacity", 1)
-//             .style("stroke", "black")
-//     }
-
-//     let mouseLeave = function(d) {
-//         d3.selectAll(".State")
-//             .transition()
-//             .duration(200)
-//             .style("opacity", .8)
-//         d3.select(this)
-//             .transition()
-//             .duration(200)
-//             .style("stroke", "transparent")
-//     }
-
-//     svg.append("g")
-//         .selectAll("path")
-//         .data(topo.features)
-//         .enter()
-//         .append("path")
-//         // draw each country
-//         .attr("d", path)
-//         // set the color of each country
-//         .attr("fill", function (d) {
-//             //d.total = data.includes(d.id) ? +data[data.indexOf(d.id) + 1] : 0;
-//             return colorScale(d.id);
-//         })
-//         .style("stroke", "transparent")
-//         .attr("class", function(d){ return "State" } )
-//         .style("opacity", .8)
-//         .on("mouseover", mouseOver)
-//         .on("mouseleave", mouseLeave);
-// });
 var width = 960;
 var height = 500;
-
-var lowColor = '#FFFFFF'
-var highColor = '#00441B'
 
 // D3 Projection
 var projection = d3.geoAlbersUsa()
@@ -198,6 +120,9 @@ d3.csv("../data/State_Level_data.csv").then(function(data) {
 			.attr("height", h)
 			.attr("class", "legend");
 
+    var legendScale = d3.scaleSequential(d3.interpolateGreens)
+      .domain([0, maxVal]);
+
 		var legend = key.append("defs")
 			.append("svg:linearGradient")
 			.attr("id", "gradient")
@@ -209,12 +134,12 @@ d3.csv("../data/State_Level_data.csv").then(function(data) {
 
 		legend.append("stop")
 			.attr("offset", "0%")
-			.attr("stop-color", highColor)
+			.attr("stop-color", legendScale(maxVal))
 			.attr("stop-opacity", 1);
 			
 		legend.append("stop")
 			.attr("offset", "100%")
-			.attr("stop-color", lowColor)
+			.attr("stop-color", legendScale(0))
 			.attr("stop-opacity", 1);
 
 		key.append("rect")
@@ -223,9 +148,9 @@ d3.csv("../data/State_Level_data.csv").then(function(data) {
 			.style("fill", "url(#gradient)")
 			.attr("transform", "translate(0,10)");
 
-		var y = d3.scaleSequential(d3.interpolateGreens)
-                .range([h, 0])
-                .domain([minVal, maxVal]);
+		var y = d3.scaleLinear()
+    .range([h, 0])
+    .domain([minVal, maxVal]);
 
 		var yAxis = d3.axisRight(y);
 
