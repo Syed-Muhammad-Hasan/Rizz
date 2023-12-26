@@ -1,34 +1,34 @@
 var width = 960;
 var height = 500;
 
-// D3 Projection
-var projection = d3.geoAlbersUsa()
+// d3v7 Projection
+var projection = d3v7.geoAlbersUsa()
   .translate([width / 2, height / 2]) // translate to center of screen
   .scale([1000]); // scale things down so see entire US
 
 // Define path generator
-var path = d3.geoPath() // path generator that will convert GeoJSON to SVG paths
+var path = d3v7.geoPath() // path generator that will convert GeoJSON to SVG paths
   .projection(projection); // tell path generator to use albersUsa projection
 
 //Create SVG element and append map to the SVG
-var svg = d3.select("#ChoroplethMapsContainer")
+var svg = d3v7.select("#ChoroplethMapsContainer")
   .append("svg")
   .attr("width", width)
   .attr("height", height);
 
 // Load in my states data!
-d3.csv("../data/State_Level_data.csv").then(function(data) {
+d3v7.csv("../data/State_Level_data.csv").then(function(data) {
 	var dataArray = [];
 	for (var d = 0; d < data.length; d++) {
 		dataArray.push(data[d].totalTrees)
 	}
-	var minVal = d3.min(dataArray)
-	var maxVal = d3.max(dataArray)
-	var ramp = d3.scaleSequential(d3.interpolateGreens)
+	var minVal = d3v7.min(dataArray)
+	var maxVal = d3v7.max(dataArray)
+	var ramp = d3v7.scaleSequential(d3v7.interpolateGreens)
             .domain([0, maxVal]);
 	
   // Load GeoJSON data and merge with states data
-  d3.json("https://gist.githubusercontent.com/wboykinm/dbbe50d1023f90d4e241712395c27fb3/raw/9753ba3a47f884384ab585a42fc1be84a4a474ca/us-states.json").then(function(json) {
+  d3v7.json("https://gist.githubusercontent.com/wboykinm/dbbe50d1023f90d4e241712395c27fb3/raw/9753ba3a47f884384ab585a42fc1be84a4a474ca/us-states.json").then(function(json) {
 
     // Loop through each state data value in the .csv file
     for (var i = 0; i < data.length; i++) {
@@ -57,7 +57,7 @@ d3.csv("../data/State_Level_data.csv").then(function(data) {
       }
     }
     
-    var tooltip = d3.select("#ChoroplethMapsContainer")
+    var tooltip = d3v7.select("#ChoroplethMapsContainer")
         .append("div")
         .style("opacity", 0)
         .attr("class", "tooltip")
@@ -70,11 +70,11 @@ d3.csv("../data/State_Level_data.csv").then(function(data) {
     
     let mouseOver = function(d) {
         getArea = +(this.__data__.properties.totalArea);
-        d3.selectAll(".state")
+        d3v7.selectAll(".state")
           .transition()
           .duration(200)
           .style("opacity", .1)
-        d3.select(this)
+        d3v7.select(this)
           .transition()
           .duration(200)
           .style("opacity", 1)
@@ -87,11 +87,11 @@ d3.csv("../data/State_Level_data.csv").then(function(data) {
       }
     
       let mouseLeave = function(d) {
-        d3.selectAll(".state")
+        d3v7.selectAll(".state")
           .transition()
           .duration(200)
           .style("opacity", 1)
-        d3.select(this)
+        d3v7.select(this)
           .transition()
           .duration(200)
           .style("stroke", "transparent")
@@ -114,13 +114,13 @@ d3.csv("../data/State_Level_data.csv").then(function(data) {
 		// add a legend
 		var w = 140, h = 300;
 
-		var key = d3.select("#ChoroplethMapsContainer")
+		var key = d3v7.select("#ChoroplethMapsContainer")
 			.append("svg")
 			.attr("width", w)
 			.attr("height", h)
 			.attr("class", "legend");
 
-    var legendScale = d3.scaleSequential(d3.interpolateGreens)
+    var legendScale = d3v7.scaleSequential(d3v7.interpolateGreens)
       .domain([0, maxVal]);
 
 		var legend = key.append("defs")
@@ -148,11 +148,11 @@ d3.csv("../data/State_Level_data.csv").then(function(data) {
 			.style("fill", "url(#gradient)")
 			.attr("transform", "translate(0,10)");
 
-		var y = d3.scaleLinear()
+		var y = d3v7.scaleLinear()
     .range([h, 0])
     .domain([minVal, maxVal]);
 
-		var yAxis = d3.axisRight(y);
+		var yAxis = d3v7.axisRight(y);
 
 		key.append("g")
 			.attr("class", "y axis")
