@@ -18,11 +18,16 @@ function dot_plot(is_multiple, canvas_name) {
         height = 0.6 * width;
 
     // Load GeoJSON data and display the map
-    d3v5.csv("../data/usa_top10.csv").then(function (data) {
-        d3v5.json("../data/usaRegs.json").then(function (world) {
-            const canvas = d3v5.select(canvas_name)
-                .attr("width", width)
-                .attr("height", height);
+  Promise.all([
+    d3v5.csv("../data/usa_top10.csv"),
+    d3v5.json("../data/usaRegs.json")
+  ]).then(function (results) {
+    const data = results[0];
+    const world = results[1];
+
+    const canvas = d3v5.select(canvas_name)
+      .attr("width", width)
+      .attr("height", height);
 
             const context = canvas.node().getContext("2d");
 
@@ -145,7 +150,7 @@ function dot_plot(is_multiple, canvas_name) {
                 }
             }
         });
-    });
+
 
     function createPoints(width, height, radius) {
         var sample = poissonDiscSampler(width, height, radius);
